@@ -1,0 +1,281 @@
+main {
+    margin: 0;
+    padding: 10px;
+    background-color: #2e364a;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+main>div>h1 {
+
+    color: white;
+    padding: 0px;
+    margin: 0;
+    font-size: 50px;
+    font-weight: 600;
+
+}
+
+main>div>p {
+
+    color: white;
+    padding: 0px;
+    margin: 0;
+    color: white;
+    font-size: 30px;
+}
+
+#social {
+    list-style-type: none;
+    position: relative;
+    top: -100px;
+}
+
+#social a {
+    display: block;
+    margin: 0 2ex 0 0;
+    padding: 2ex;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    float: right;
+}
+
+#social a>img {
+    width: 40px;
+}
+
+#info {
+    max-width: 50%;
+    position: relative;
+    top: 30ex;
+    margin: 0 auto 0 auto;
+    min-height: 30ex;
+    padding: 20px;
+    z-index: 1;
+    border-top: 5px white solid;
+    border-bottom: 5px #2e364a solid;
+    border-radius: 5px;
+}
+
+#info::before,
+#info::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    /* Adjust the width as needed */
+    z-index: -1;
+}
+
+#info::before {
+    left: 0;
+    background: linear-gradient(to top, #2e364a 25%, white 50%);
+}
+
+#info::after {
+    right: 0;
+    background: linear-gradient(to top, #2e364a 25%, white 50%);
+}
+
+nav.container {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.nav-pills>li>a {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #2e364a;
+    color: white;
+    padding: 10px;
+}
+
+#imge {
+
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+
+#data {
+    vertical-align: middle;
+    flex: 1 1 70%;
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+
+#imge img {
+    width: 250px;
+}
+
+pre {
+    max-width: 70%;
+}
+
+#exc {
+    display: none;
+}
+
+#innerExc {
+    flex-direction: column;
+    background-color: #2e364a;
+    position: relative;
+    width: 100%;
+    padding: 40px;
+
+
+}
+
+.text {
+    width: 50%;
+    padding: 10px 15px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.left {
+    left: 0;
+    margin-left: -15px;
+}
+
+.right {
+    left: 50%;
+    margin-left: 15px;
+}
+
+.time::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 90%;
+    background: white;
+    left: 50%;
+    margin-left: -3px;
+}
+
+
+.larr {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid white;
+    right: -12px;
+
+
+}
+
+.rarr {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid white;
+    left: -12px;
+
+
+}
+
+#summary {
+    align-items: center;
+    justify-content: center;
+    background-color: #2e364a;
+    position: relative;
+    width: 100%;
+    padding: 40px;
+
+
+
+}
+
+#summary>p {
+    width: 90%;
+    padding: 10px 15px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+
+
+
+@media screen and (max-width:1080px) {
+    #info {
+        max-width: 85%;
+        position: relative;
+        top: 20ex;
+        margin: 0 auto 0 auto;
+    }
+
+    .nav-justified{
+        width: 100%;
+       margin: 0px auto;
+       padding: 0;
+       float: left;
+
+
+    }
+    #social a>img {
+        width: 20px;
+    }
+}
+
+@media screen and (max-width:780px) {
+    #info {
+
+        position: relative;
+        top: 20ex;
+        margin: 0 auto 0 auto;
+    }
+
+    #home {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #data pre {
+
+        justify-content: center;
+        margin: 5px auto;
+    }
+
+    .nav-justified>li>a#ho {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #social {
+        top: 0px;
+    }
+
+
+    #social a>img {
+        width: 20px;
+    }
+}
